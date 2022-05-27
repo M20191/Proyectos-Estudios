@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,400;1,200&display=swap');
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+html{
+	background-color: whitesmoke;
+}
+
+header{
+	background: rgb(253, 255, 241);
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	font-family: 'Plus Jakarta Sans', sans-serif;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+header li{
+	color: rgb(0, 0, 0);
+	display: inline-block;
+	padding: 25px;
+	margin: auto;
+
+}
+
+header li:hover{
+	transition: all .2s ease-in-out;
+	background-color: rgb(0, 0, 0);
+	color: white;
+}
+
+nav{
+	margin: auto;
+}
+
+nav ul{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+	justify-content: center;
+	margin-top: 250px;
+	margin-bottom: 250px;
+}
+
+nav li{
+	margin: 25px;
+	justify-content: center;
+	padding: 25px;
+	color: black;
+
+
+}
+
+.icon{
+	color: rgb(66, 66, 66);
+}
+
+nav .icon:hover, li:hover{
+	transition: all .2s ease-in-out;
+	color: rgb(0, 0, 0);
+	
+
+}
+
+nav li:hover{
+	border-bottom: solid black 1px;
+	cursor: pointer;
+}
+
+nav i{
+	font-size: 35px;
+
+}
+
+/*    */
+
+main{
+	background-color: white;
+	
+}
+
+main ul{
+	display: flex;
+	list-style: none;
+	
+}
+
+main li{
+	margin: 15px;
+	text-decoration: underline;
+	font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+main i{
+	font-size: 25px;
+}
+
+/*    */
+
+
+div .herramienta h3{
+	font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+
+.sec{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;	
+}
+
+.img{
+	width: 250px;
+	height: 250px;
+	margin: auto;
+}
+
+.herramienta img{
+	display: flex;
+}
+
+button{
+	padding: 5px;
+	border-radius: 20px;
+	cursor: pointer;
+	border: solid  rgb(116, 183, 255) 5px;
+	background-color: rgb(116, 183, 255);
+	color: white;
+	font-weight: bolder;
+	width: 100%;
+	margin: auto;
+}
+
+button:hover{
+	transition: all .2s ease-in-out;
+	border: solid  rgb(95, 177, 188) 5px;
+	background-color: rgb(95, 177, 188);
+	
+}
+
+.herramienta h4{
+	font-size: 20px;
+	text-align: center;
+	font-family: 'Plus Jakarta Sans', sans-serif;
+	font-weight: 10px;
+	margin-bottom: 5px;
+	
+}
+
+
+.sec{
+	margin-bottom: 250px;
+}
+

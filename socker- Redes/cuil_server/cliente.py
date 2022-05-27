@@ -10,17 +10,35 @@ client.connect((SERVER_HOST, SERVER_PORT)) # Nos conectamos al Host y Puerto
 
 
 while True:
-    try:# Envio de mensaje
-        message = input("CUIL: ").lower() 
-        print("\n") 
-        client.send(message.encode())
+    
+    select = int(input("[1]Verificar usuario\n[2]Agregar usuario\n... "))
+    if select == 1:
+        try:# Envio de mensaje
+            message = input("CUIL: ").lower() 
+            print("\n") 
+            client.send(message.encode())
 
-        complete_name = client.recv(BUFFER_SIZE).decode()
-        print(complete_name)
+            complete_name = client.recv(BUFFER_SIZE).decode()
+            print(complete_name)
 
 
-    except:
-        pass 
+
+
+        except:
+            pass 
+
+    if select == 2:
+        with open('personas.json') as file:
+            data = json.load(file)
+            data.write(f"""
+,
+    '{number}':[
+        {
+    'nombre': '{name}',
+    'apellido': '{surname}'
+        
+        }
+    ]""")        
 
     if message == "exit": # Si el mensaje es "exit" sale del blucle
         break

@@ -1,9 +1,9 @@
 import socket
 import subprocess
 
-SERVER_HOST = ""
-SERVER_PORT = 0000
-BUFFER_SIZE = 0000
+SERVER_HOST = "" # Ip server to connect
+SERVER_PORT = 0000 # Port to connect
+BUFFER_SIZE = 1024
 
 s = socket.socket()
 s.connect((SERVER_HOST, SERVER_PORT))

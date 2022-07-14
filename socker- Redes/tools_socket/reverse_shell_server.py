@@ -1,7 +1,7 @@
 import socket
 
-SERVER_HOST = ""
-SERVER_PORT = 000
+SERVER_HOST = "" # Ip server
+SERVER_PORT = 000 # Port server
 
 # send 1024 (1kb) a time (as buffer size)
 BUFFER_SIZE = 1024
@@ -25,7 +25,7 @@ while True:
     #get the command from prompt
     command = input("Enter the command you wanna execute:")
     # send the command to the client
-    client_socket.send(command.enconde())
+    client_socket.send(command.encode())
     if command.lower() == "exit":
         break
     results = client_socket.recv(BUFFER_SIZE).decode()
